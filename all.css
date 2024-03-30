@@ -12,7 +12,8 @@ body {
     margin-top: 50px;
     border: 10px crimson dotted;
     margin: 50px;
-    padding: 0px;
+    padding: 20px;
+    position: relative;
 }
 
 button {
@@ -53,12 +54,12 @@ input[type="number"] {
 }
 
 .reda {
-    height: 400px;
+    height: 250px;
 }
 
 #imgreda {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: bisque;
-
+    
 }
