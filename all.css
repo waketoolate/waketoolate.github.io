@@ -55,6 +55,7 @@ input[type="number"] {
 
 .reda {
     height: 250px;
+    position: relative;
 }
 
 #imgreda {
