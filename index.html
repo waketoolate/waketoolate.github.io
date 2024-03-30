@@ -1,44 +1,45 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My first styled page</title>
-  <link rel="stylesheet" href="mystyle.css">
-  <!-- 样式运用在全部标签上 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css" type="text/css">
+    <script src="hanshu.js"></script>
+    <title>CoinGameWithReda!</title>
 </head>
 
 <body>
+    <div class="img">
+        <img class="leafleft" src="素材\leafleft.png" alt="leafleft">
+        <img class="leafright" src="素材\leafright.png" alt="leafright">
+    </div>
+    <div class="container">
+        <h1>与小熊猫的苹果对决！</h1>
 
-<!-- Site navigation menu -->
-<ul class="navbar">
-  <li><a href="index.html">Home page</a>
-  <li><a href="musings.html">Musings</a>
-  <li><a href="town.html">My town</a>
-  <li><a href="links.html">Links</a>
-</ul>
+        <div id="game" style="display: none;">
+            <h2>游戏阶段</h2>
+            <p>你好呀, <span id="playerName"></span>! 可以和小熊猫玩一个游戏吗?</p>
+            <p><b>游戏规则：</b>玩家轮流拿取苹果，拿到最后一个苹果的玩家获胜，并得到全部的苹果！</p>
+            <div id="imgreda">
+                <img class="reda" src="素材\reda.png" alt="reda">
+            </div>
+            <p><b>初始苹果数量:</b> <span id="startingApples"></span></p>
+            <p><b>剩下的苹果数量: </b><span id="applesLeft"></span></p>
+            <p id="playerAction"></p>
+            <p id="pandaApplesTaken"></p>
+            <input type="number" id="applesToTake" min="1" max="2" value="1">
+            <button id="takeButton">拿取苹果</button>
+        </div>
+        <button id="startButton">开始游戏</button>
+        <br>
+        <button id="playAgainButton">再玩一次</button>
+        <br>
 
-<!-- Main content -->
-<h1 style="
-border-style: solid;
-border-width: 7px;
-border-color: black;
-padding: 20px;
-text-align: center;
-background-color: cadetblue;
-color: white;
-">My first styled page</h1>
+    </div>
 
-<p>Welcome to my styled page!
 
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
-
-<p>There should be more here, but I don't know
-what yet.
-
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 5 April 2004<br>
-  by myself.</address>
-
+    
 </body>
+
 </html>
+

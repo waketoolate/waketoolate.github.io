@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: darkorange;
+}
+
+
+.container {
+    width: 1080;
+    height: 1920;
+    background-color: linen;
+    margin-top: 50px;
+    border: 10px crimson dotted;
+    margin: 50px;
+    padding: 0px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#playAgainButton {
+    margin: 0 auto;
+    display: none; 
+    text-align: center; 
+}
+
+.leafleft {
+    display: inline-block;
+    width: 110px;
+    position: relative;
+    left: 20px;
+    top: 55px;
+    transform: rotate(20deg);
+}
+
+.leafright {
+    display: inline-block;
+    width: 110px;
+    position: relative;
+    top: 60px;
+}
+
+.reda {
+    height: 400px;
+}
+
+#imgreda {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: bisque;
+
+}
