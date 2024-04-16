@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人作品集</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%; /* 让 body 和 html 的高度占满整个视口 */
+      margin: 0; /* 去除默认的外边距 */
+      padding: 0; /* 去除默认的内边距 */
+      color: #4fa5d9;
+    }
+
+    .navbar-brand {
+      color: #014ca3;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    .navbar-brand:hover {
+      color: #1839e3;
+    }
+    
+
+    .nav-link {
+      font-weight: bold;
+      color: #36669c;
+    }
+    .nav-link:hover {
+      color: #002aff;
+    }
+    .nav-link.active {
+      color: #010e53; 
+    }
+
+    .circle {
+      display: flex;
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      height: 100%; /* 高度占满整个视口 */
+      text-align: center; /* 文本居中 */
+      color:  #010e53;
+      position: relative;
+    }
+
+
+    .welcome {
+      display: flex;
+      color: #014ca3;
+      position: absolute;
+      top: 50.5%; /* 将顶部定位到页面的中间 */
+      left: 50%; /* 将左侧定位到页面的中间 */
+      transform: translate(-50%, -50%); 
+      text-align: center; /* 文本居中 */
+      background-color: transparent;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 25%;
+      text-decoration: none;
+    }
+
+
+    @keyframes light {
+    from {
+       box-shadow:0px 0px 10px #3876e1;
+    }
+    to {
+      box-shadow:0px 0px 36px #3876e1;
+    }
+    }
+
+    .light {
+      margin:300px;
+      width: 250px;
+      height: 250px;
+      margin:20px;
+      border-radius: 50%;
+      animation: light 2s ease-in-out infinite alternate;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+    }
+
+  </style>
+</head>
+
+<body class="full pattern-dots-xl">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="portfolio.html">REDA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: #010e53;font-weight: bolder;" >首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="zpj.html">作品集</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="circle">
+  <div class="light"></div>
+  <div class="welcome">
+    <a class="welcome" href="zpj.html">welcome</a>
+  </div>
+</div>
+
+
+<!-- 引入 Bootstrap 的 JavaScript 文件，用于 Navbar 的折叠功能 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
